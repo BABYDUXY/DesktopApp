@@ -47,7 +47,7 @@ public class UpisEvenata extends JDialog {
     public UpisEvenata() {
         setBounds(100, 100, 456, 413);
         getContentPane().setLayout(new BorderLayout());
-        contentPanel.setBackground(new Color(255, 255, 255));
+        contentPanel.setBackground(new Color(200, 200, 200));
         contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
         getContentPane().add(contentPanel, BorderLayout.CENTER);
         contentPanel.setLayout(null);
@@ -66,7 +66,7 @@ public class UpisEvenata extends JDialog {
         ImeEventa.setBounds(152, 105, 143, 26);
         ImeEventa.setFont(new Font("Tahoma", Font.PLAIN, 17));
         ImeEventa.setEditable(false);
-        ImeEventa.setText("Ime Eventa:");
+        ImeEventa.setText("Ime Eventa :");
         contentPanel.add(ImeEventa);
 
         VrijemeEventa = new JTextArea();
@@ -156,9 +156,9 @@ public class UpisEvenata extends JDialog {
 
             conn.close();
         } catch (ParseException ex) {
-            JOptionPane.showMessageDialog(null, "Pogreška pri unosu podataka", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Pogreška pri unosu podataka!!!", "Error", JOptionPane.ERROR_MESSAGE);
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "Pogreška pri unosu podataka", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Pogreška pri unosu podataka!!! ", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
